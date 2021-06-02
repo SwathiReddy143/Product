@@ -37,11 +37,11 @@ public class PoductController {
     public Product findProductById(@PathVariable int id) {
 		return service.getProductbyid(id);
 	}
-	@GetMapping("/product/{name}")
+	//@GetMapping("/product/{name}")
     public Product findProductByName(@PathVariable String name) {
 		return service.getProductbyname(name);
 	}
-	//@PutMapping("/updateProduct")
+	@PutMapping("/updateProduct")
 	public Product updateProduct(@RequestBody Product product) {
 		return service.updateProduct(product);
 	}
