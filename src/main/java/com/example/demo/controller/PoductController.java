@@ -29,7 +29,7 @@ public class PoductController {
 		return service.saveProducts(products);
 		
 	}
-	@GetMapping("/products")
+	//@GetMapping("/products")
 	public List<Product> findAllProduct(){
 		return service.getProducts();
 	}
@@ -37,7 +37,7 @@ public class PoductController {
     public Product findProductById(@PathVariable int id) {
 		return service.getProductbyid(id);
 	}
-	//@GetMapping("/product/{name}")
+	@GetMapping("/product/{name}")
     public Product findProductByName(@PathVariable String name) {
 		return service.getProductbyname(name);
 	}
