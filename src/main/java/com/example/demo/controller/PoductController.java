@@ -39,6 +39,7 @@ public class PoductController {
 	}
 	@GetMapping("/product/{name}")
     public Product findProductByName(@PathVariable String name) {
+		System.out.println(name);
 		return service.getProductbyname(name);
 	}
 	@PutMapping("/updateProduct")
