@@ -28,7 +28,7 @@ public class LibraryController {
 	
 	@GetMapping("/disLib")
 	public List<Library>displayLibrary(){
-		System.out.println("hi");
+		System.out.println("hello");
 		return ls.showLibrary();
 	}
 	
